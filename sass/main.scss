@@ -1,10 +1,20 @@
 @import './base/reset';
 
 @import './base/common';
-@import './components/container.scss';
+@import './base/vars';
 
+@import './utils/hidden';
+
+
+@import './components/container';
 @import './components/media.scss';
 
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/advantages';
+@import './layouts/duties';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer.scss';
+@import './layouts/modal';
+
