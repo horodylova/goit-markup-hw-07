@@ -38,6 +38,11 @@
     transition: background-color var(--transition-duration)
     var(--transition-timing-function),
   color var(--transition-duration) var(--transition-timing-function); 
+    &:hover,
+    &:focus {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+}
 
 }
 
@@ -45,8 +50,4 @@
     fill: currentColor;
 } 
 
-.client-icon:hover,
-.client-icon:focus {
-    color: var(--color-blue);
-    border-color: var(--color-blue);
-}
+

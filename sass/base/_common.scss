@@ -50,9 +50,9 @@ img {
     fill: var(--color-link);
 
     transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.color-link:hover,
-.color-link:after {
+    &:hover,
+    &:after {
     fill: var(--color-blue);
 }
+}
+

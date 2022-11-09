@@ -9,11 +9,12 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--color-black);
+    & .logo-decorate {
+        color: var(--color-blue);
+    }
 }
 
-.logo .logo-decorate {
-    color: var(--color-blue);
-}
+
 
 .main-nav {
     display: flex;
@@ -99,15 +100,16 @@
     
     display: flex;
     align-items: center;
-
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
+    &:hover,
+    &:focus {
     color: var(--color-blue);
 }
 
-.contakts-list .link {
+}
+
+
+
+.contacts-list .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }

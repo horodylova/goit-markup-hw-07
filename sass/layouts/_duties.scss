@@ -2,6 +2,10 @@
 .duties {
     margin: 0 auto;
     padding: 94px 0;
+    & .duties-list {
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .duties-title {
@@ -10,10 +14,7 @@
     color: var(--color-grey);
 } 
 
-.duties .duties-list {
-    display: flex;
-    gap: 30px;
-}
+
 
 .overlay-wrap {
     position: relative;

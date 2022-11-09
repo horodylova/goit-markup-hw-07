@@ -138,6 +138,10 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    &:hover,
+    &:focus {
+    background: #188CE8
+}
 }
 
 .email-button {
@@ -146,18 +150,9 @@
     transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.footer-button:hover,
-.footer-button:focus {
-    background: #188CE8
-}
 
-.footer-form input::placeholder {
 
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-  }
+
 
 
 .footer-form input {
@@ -171,5 +166,12 @@
   width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
+  &::placeholder {
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
 }
  
