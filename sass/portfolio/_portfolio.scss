@@ -5,12 +5,12 @@
     color: var(--color-grey);
     background-color: var(--background-second);
     text-align: center;
-    &:hover,
-    &:focus {
-    color: var(--color-blue);
-}
 }
 
+.button:hover,
+.button:focus {
+    color: var(--color-blue);
+}
 
 .portfolio {
     padding: 94px 0;
@@ -66,16 +66,15 @@
     background-color:var(--color-white); 
 
     transition: color var(--transition-duration) var(--transition-timing-function);
-    &:hover,
-    &:focus {
+}
+
+.projects-link:hover,
+.projects-link:focus {
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-}
-
-
 
 .projects-link:hover .projects-overlay-text,
 .projects-link:focus .projects-overlay-text {
