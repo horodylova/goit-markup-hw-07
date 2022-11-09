@@ -66,7 +66,7 @@ img {
 /* -------Загальні --------*/
 :root {
   /* Кольори */
-  /* --background-primary: #f5f5f5; */
+  --background-primary: #f5f5f5;
   --background-second: #F5F4FA;
   --background-elements: #2F303A;
   --color-primary: #757575;
@@ -310,47 +310,41 @@ img {
   background-color: #188CE8;
 }
 
-.container-advantages {
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin: 0 auto;
-  padding: 94px 0 0 0;
 }
 
-.advantages-list::before {
-  content: "";
-  background-color: rgb(245, 244, 250);
-  height: 120px;
+.advantages__item {
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 270px;
-  display: block;
-  margin-bottom: 30px;
-  gap: 30px;
-  margin-top: 0;
+  height: 120px;
+  background-color: var(--background-second);
   border-radius: 4px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
 }
 
-.antenna::before {
-  background-image: url(../img/antenna\ 1\ \(1\).svg);
-}
-
-.clock::before {
-  background-image: url(../img/clock\ 1\ \(1\).svg);
-}
-
-.diagram::before {
-  background-image: url(../img/diagram\ 1\ \(1\).svg);
-}
-
-.astronaut::before {
-  background-image: url(../img/astronaut\ 1\ \(1\).svg);
-}
-
-.advantages .advantages-title {
+.advantages__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -360,23 +354,11 @@ img {
   margin-bottom: 10px;
 }
 
-.advantages-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.advantages .advantages-note {
-  line-height: 1.71;
-}
-
-.advantages-list {
-  width: calc((100% - 90px) / 4);
-}
-
-.advantages-note {
+.advantages__descr {
   margin: 0 auto;
+  line-height: 1.71;
+  font-size: 14px;
+  color: var(--color-primary);
 }
 
 .duties {
@@ -1165,9 +1147,7 @@ textarea:focus {
   transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function), -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
 }
-
-.button-portfolio:focus,
-.button-portfolio:hover {
+.button-portfolio:focus, .button-portfolio:hover {
   background-color: var(--color-blue);
   color: var(--color-white);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1198,9 +1178,7 @@ textarea:focus {
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:hover, .projects-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

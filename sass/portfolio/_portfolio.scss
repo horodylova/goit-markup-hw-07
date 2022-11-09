@@ -37,15 +37,16 @@
     background-color var(--transition-duration)
       var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
-}
-
-.button-portfolio:focus,
-.button-portfolio:hover {
+    &:focus,
+    &:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+}
+
+
 
 .projects {
     display: flex;
@@ -66,14 +67,13 @@
     background-color:var(--color-white); 
 
     transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.projects-link:hover,
-.projects-link:focus {
+    &:hover,
+    &:focus {
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
 }
 
 .projects-link:hover .projects-overlay-text,
