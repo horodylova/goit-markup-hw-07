@@ -61,6 +61,10 @@
     cursor: pointer;
     position: absolute;
 
+    transition: background-color var(--transition-duration)
+    var(--transition-timing-function),
+  color var(--transition-duration) var(--transition-timing-function);
+
 }
 
 .modal-button:hover,
@@ -173,6 +177,11 @@ textarea {
 .form-checkbox {
     display: flex;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-primary);
 }
 label {
     font-size: 12px;
@@ -238,6 +247,8 @@ textarea:focus {
     font-size: 16px;
     line-height: 1.87;
 
+    font-weight: 700;
+    letter-spacing: 0.06em;
 
     transition: background-color var(--transition-duration)
     var(--transition-timing-function),
