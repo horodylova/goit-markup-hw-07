@@ -66,7 +66,7 @@ img {
 /* -------Загальні --------*/
 :root {
   /* Кольори */
-  --background-primary: #f5f5f5;
+   --background-primary: #f5f5f5; 
   --background-second: #F5F4FA;
   --background-elements: #2F303A;
   --color-primary: #757575;
@@ -311,8 +311,12 @@ img {
 }
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 94px 0 0 0;
 }
 
 .advantages__list {
@@ -327,23 +331,6 @@ img {
       flex-basis: calc((100% - 90px) / 4);
 }
 
-.advantages__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-second);
-  border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px;
-}
-
 .advantages__subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -356,9 +343,41 @@ img {
 
 .advantages__descr {
   margin: 0 auto;
+}
+
+.advantages__item::before {
+  content: "";
+  background-color: rgb(245, 244, 250);
+  height: 120px;
+  width: 270px;
+  display: block;
+  margin-bottom: 30px;
+  gap: 30px;
+  margin-top: 0;
+  border-radius: 4px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../img/antenna\ 1\ \(1\).svg);
+}
+
+.clock::before {
+  background-image: url(../img/clock\ 1\ \(1\).svg);
+}
+
+.diagram::before {
+  background-image: url(../img/diagram\ 1\ \(1\).svg);
+}
+
+.astronaut::before {
+  background-image: url(../img/astronaut\ 1\ \(1\).svg);
+}
+
+.advantages .advantages-note {
   line-height: 1.71;
-  font-size: 14px;
-  color: var(--color-primary);
 }
 
 .duties {

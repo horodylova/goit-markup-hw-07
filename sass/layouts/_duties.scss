@@ -1,26 +1,30 @@
 
 .duties {
-    margin: 0 auto;
-    padding: 94px 0;
-    & .duties-list {
-        display: flex;
-        gap: 30px;
-    }
+    padding-top: 47px;
+    padding-bottom: 94px;
+    
 }
 
-.duties-title {
+.duties__examples {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+.duties__list {
+    display: flex;
+    gap: 30px;
+}
+
+.duties__title {
     margin: 0 0 50px 0;
 
     color: var(--color-grey);
 } 
 
-
-
-.overlay-wrap {
+.overlay__wrap {
     position: relative;
 }
 
-.overlay-text {
+.overlay__text {
     position: absolute;
 
     padding: 27px;
@@ -41,3 +45,5 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
+ 
+ 
