@@ -419,6 +419,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-media-icon {
+  fill: currentColor;
+}
+
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -502,13 +506,13 @@ img {
   padding: 94px 0;
 }
 
-.clients-title {
+.clients__title {
   color: var(--color-grey);
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +521,7 @@ img {
           justify-content: space-between;
 }
 
-.client-logo {
+.clients__logo {
   gap: 30px;
   width: 170px;
   display: -webkit-box;
@@ -526,7 +530,7 @@ img {
   margin: 0 auto;
 }
 
-.client-icon {
+.clients__icon {
   /* fill: var(--color-link); */
   width: 106px;
   height: 60px;
@@ -539,13 +543,9 @@ img {
   -webkit-transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
-.client-icon:hover, .client-icon:focus {
+.clients__icon:hover, .clients__icon:focus {
   color: var(--color-blue);
   border-color: var(--color-blue);
-}
-
-.team-media-icon {
-  fill: currentColor;
 }
 
 .footer {

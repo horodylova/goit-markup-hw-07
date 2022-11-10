@@ -2,19 +2,19 @@
     padding: 94px 0;
 } 
 
-.clients-title {
+.clients__title {
     color: var(--color-grey);
     
     margin-top: 0;
     margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: space-between;
 }
 
-.client-logo {
+.clients__logo {
     gap: 30px;
     width: 170px;
     display: flex;
@@ -22,7 +22,7 @@
    
 }
 
-.client-icon {
+.clients__icon {
     /* fill: var(--color-link); */
 
     width: 106px;
@@ -46,8 +46,6 @@
 
 }
 
-.team-media-icon {
-    fill: currentColor;
-} 
+
 
 
